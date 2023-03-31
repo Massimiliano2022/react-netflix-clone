@@ -19,7 +19,7 @@ class Main extends Component {
             if (response.ok) {
               const data = await response.json();
               console.log("FETCH RESULT: ", data);
-              //this.setState({ movies:data });
+              this.setState({ movies:data.Search });
               console.log("SET STATE");
             } 
           } catch (error) {
@@ -61,6 +61,9 @@ class Main extends Component {
                         </Button>
                     </div>
                 </div>
+                <MyGallery title="Trending Now" movies={this.state.movies}  />
+                <MyGallery title="Watch it Again" movies={this.state.movies}  />
+                <MyGallery title="New Releases" movies={this.state.movies}  />
                 <MyFooter />
             </Container>
         );
