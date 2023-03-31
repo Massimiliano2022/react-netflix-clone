@@ -5,7 +5,7 @@ import MyGallery from "./MyGallery";
 import MyFooter from "./MyFooter";
 
 const API_KEY = "8f194417";
-const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&t=Harry+Potter`;
+const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&s=Harry+Potter`;
 
 class Main extends Component {
     state = {
