@@ -45,6 +45,8 @@ const movies = [
     img18
 ];
 
+//https://www.omdbapi.com/?apikey=8f194417&t=Harry+Potter
+
 function getRandomMovies() {
     const randomMovies = [];
     const usedIndexes = [];
